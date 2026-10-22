@@ -16,6 +16,7 @@ Certificate Craft is a standalone, browser-based workspace for preparing and org
 - Reusable firm and signatory profiles
 - Certificate starting points for net worth, turnover, income, balance confirmation and general financial certificates
 - Draft/final status, search, edit and save
+- Editable Word `.docx` export with certificate summary, asset and assessable-fund annexures, INR/foreign-currency conversion, bordered tables, and signature details
 - Browser print dialog for printing or saving a PDF
 - JSON backup and restore for locally stored records
 - Responsive layout for desktop and mobile screens
@@ -26,7 +27,7 @@ The app stores records in the browser's local storage on the current device. It 
 
 ## Important limitations
 
-This is a standalone drafting aid, not a compliance or legal validation system. Review every certificate's wording, calculations, source documents and applicable professional requirements before issuing it. The current version uses a general financial certificate structure; it does not yet provide verified, certificate-specific prescribed formats, true DOCX export, firm letterhead rendering, robust multi-page annexures, or cloud storage.
+This is a standalone drafting aid, not a compliance or legal validation system. Review every certificate's wording, calculations, source documents and applicable professional requirements before issuing it. The current version uses a general financial certificate structure; it does not yet provide verified, certificate-specific prescribed formats, advanced logo/image embedding, robust pagination for very long annexures, or cloud storage.
 
 ## Repository structure
 
