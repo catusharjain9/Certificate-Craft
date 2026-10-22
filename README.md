@@ -1,25 +1,37 @@
-# Certificate Craft — Web Workspace
+# Certificate Craft
 
-Certificate Craft is a browser-based workspace for preparing and reviewing CA certificate drafts.
+Certificate Craft is a standalone, browser-based workspace for preparing and organizing financial certificate drafts. The complete application source is in `index.html`; it does not embed or depend on Vercel or another hosted application.
 
-## Open the application
+## Run the website
 
-- Live app: https://certificate-craft-web.vercel.app
-- Repository entry point: [index.html](./index.html)
+- **Open locally:** download or clone this repository and open `index.html` in a modern browser.
+- **Host from GitHub:** enable GitHub Pages in the repository settings and select the `main` branch with the root folder as the publishing source. The app is static and does not require a build step or server.
+- **Use the live source:** [index.html](https://github.com/catusharjain9/Certificate-Craft/blob/main/index.html)
 
-The repository's `index.html` is a lightweight web entry point that embeds the currently hosted application. The application itself is deployed separately on Vercel. This repository does **not yet contain the complete standalone application source code**.
+## Current features
 
-## Current functionality
-
-The deployed first version includes a dashboard, certificate templates, certificate data form with live A4 preview, Indian currency formatting and net-worth calculation, firm and signing-CA profiles, local draft management, browser backup/restore, and print/PDF output.
-
-## Known limitations
-
-- The DOC download is currently a Word-compatible `.doc` file, not a true `.docx`.
-- Drafts and profiles are stored in the current browser's local storage; there is no cloud database, authentication, or multi-user synchronization.
-- Letterhead integration, robust multi-page annexures, pagination, and export formatting need further testing and improvement.
-- Sample certificate wording must be reviewed and approved for the relevant engagement before professional use.
+- Dashboard with saved certificate counts and recent records
+- Certificate drafting form with a live A4 print preview
+- Indian rupee formatting and totals for assets, liabilities and net worth
+- Reusable firm and signatory profiles
+- Certificate starting points for net worth, turnover, income, balance confirmation and general financial certificates
+- Draft/final status, search, edit and save
+- Browser print dialog for printing or saving a PDF
+- JSON backup and restore for locally stored records
+- Responsive layout for desktop and mobile screens
 
 ## Data and privacy
 
-The local browser workspace does not automatically sync between devices. Avoid using sensitive client information on shared devices. Do not commit client data, generated certificates, credentials, or backups to this repository.
+The app stores records in the browser's local storage on the current device. It has no login, server database, cloud synchronization or multi-user access. Export backups regularly. Clearing browser storage may permanently remove locally saved records.
+
+## Important limitations
+
+This is a standalone drafting aid, not a compliance or legal validation system. Review every certificate's wording, calculations, source documents and applicable professional requirements before issuing it. The current version uses a general financial certificate structure; it does not yet provide verified, certificate-specific prescribed formats, true DOCX export, firm letterhead rendering, robust multi-page annexures, or cloud storage.
+
+## Repository structure
+
+```
+.
+├── index.html   # Complete standalone website (HTML, CSS and JavaScript)
+└── README.md    # Project documentation
+```
